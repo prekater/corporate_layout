@@ -146,6 +146,10 @@ header {
   text-align: center;
 }
 
+.form {
+  margin-bottom: 50px;
+}
+
 .form-wrapper {
   display: flex;
 }
