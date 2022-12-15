@@ -1,0 +1,20 @@
+.root {
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+}
+
+
+.contactButton {
+  background-color: var(--black);
+  padding: 20px 28px;
+  width: 206px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white)
+}
