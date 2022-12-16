@@ -10,7 +10,6 @@
   @media (max-width: 1199.9px) {
     margin-top: 40px;
   }
-
 }
 
 .mainHeader {
@@ -27,16 +26,16 @@
   }
 
   &::after {
-    content: " Разработка ПО, SMM, Digital-маркетинг ";
+    content: ' Разработка ПО, SMM, Digital-маркетинг ';
   }
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%)
+    transform: translateX(-50%);
   }
 }
 
