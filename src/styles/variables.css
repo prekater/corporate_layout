@@ -1,42 +1,41 @@
 :root {
-    /*breakpoints*/
-    --xs: 0px;
-    --sm: 576px;
-    --md: 768px;
-    --lg: 992px;
-    --xl: 1200px;
-    --xxl: 1400px;
+  /*breakpoints*/
+  --xs: 0px;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
 
-    /* colors*/
-    --black: #000000;
-    --blue: #ADD1FF;
-    --white: #FFFFFF;
+  /* colors*/
+  --black: #000000;
+  --blue: #add1ff;
+  --white: #ffffff;
 
-    /*    typography*/
-    --h1: 400 190px/190px "American Captain", -apple-system, BlinkMacSystemFont, "Segoe UI Bold", "Roboto Bold", sans-serif;
-    --h1-mobile: 400 80px/80px "American Captain", -apple-system, BlinkMacSystemFont, "Segoe UI Bold", "Roboto Bold", sans-serif;
+  /*    typography*/
+  --h1: 400 190px/190px 'American Captain', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --h1-mobile: 400 80px/80px 'American Captain', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
 
-    --h2: 400 260px/260px "American Captain", -apple-system, BlinkMacSystemFont, "Segoe UI Bold", "Roboto Bold", sans-serif;
-    --h2-mobile: 400 129px/129px "American Captain", -apple-system, BlinkMacSystemFont, "Segoe UI Bold", "Roboto Bold", sans-serif;
+  --h2: 400 260px/260px 'American Captain', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --h2-mobile: 400 129px/129px 'American Captain', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
 
-    --h3: 400 190px/158px "American Captain", -apple-system, BlinkMacSystemFont, "Segoe UI Bold", "Roboto Bold", sans-serif;
-    --h3-mobile: 400 60px/60px "American Captain", -apple-system, BlinkMacSystemFont, "Segoe UI Bold", "Roboto Bold", sans-serif;
+  --h3: 400 190px/158px 'American Captain', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --h3-mobile: 400 60px/60px 'American Captain', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
 
-    --h5: 400 120px/120px "American Captain", -apple-system, BlinkMacSystemFont, "Segoe UI Bold", "Roboto Bold", sans-serif;
-    --h5-mobile: 400 44px/44px "American Captain", -apple-system, BlinkMacSystemFont, "Segoe UI Bold", "Roboto Bold", sans-serif;
+  --h5: 400 120px/120px 'American Captain', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --h5-mobile: 400 44px/44px 'American Captain', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
 
-    --h6: 400 79px/79px "American Captain", -apple-system, BlinkMacSystemFont, "Segoe UI Bold", "Roboto Bold", sans-serif;
-    --h6-mobile: 400 40px/40px "American Captain", -apple-system, BlinkMacSystemFont, "Segoe UI Bold", "Roboto Bold", sans-serif;
+  --h6: 400 79px/79px 'American Captain', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --h6-mobile: 400 40px/40px 'American Captain', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
 
-    --big-text: 600 50px/60px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --big-text: 600 50px/60px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
 
-    --regular-text: 600 24px/29px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
-    --regular-text-mobile: 600 16px/19px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --regular-text: 600 24px/29px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --regular-text-mobile: 600 16px/19px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
 
-    --small-text: 600 16px/20px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
-    --small-text-mobile: 600 13px/20px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --small-text: 600 16px/20px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --small-text-mobile: 600 13px/20px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
 
-    --menu-items-text: 600 32px/38px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
-    --menu-items-text-mobile: 600 30px/36px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
-
+  --menu-items-text: 600 32px/38px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+  --menu-items-text-mobile: 600 30px/36px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
 }
