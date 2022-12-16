@@ -4,8 +4,56 @@
   justify-content: space-between;
   align-items: center;
   padding: 18px 40px;
+
+  @media (max-width: 1199.9px) {
+    height: 56px;
+    padding: 10px 16px;
+  }
 }
 
+.burgerLogoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burgerIcon {
+  display: none;
+
+  @media (max-width: 1199.9px) {
+    display: block;
+    margin-right: 12px;
+  }
+}
+
+.logo {
+  width: 212px;
+  height: 32px;
+
+  @media (max-width: 1199.9px) {
+    width: 132px;
+    height: 20px;
+  }
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1199.9px) {
+    display: none;
+  }
+}
+
+.navItem {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+}
 
 .contactButton {
   background-color: var(--black);
@@ -16,5 +64,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white)
+  color: var(--white);
+  font: var(--small-text);
+
+  @media (max-width: 1199.9px) {
+    width: 142px;
+    height: 36px;
+    padding: 8px 10px;
+    font: var(--small-text-mobile);
+  }
 }
