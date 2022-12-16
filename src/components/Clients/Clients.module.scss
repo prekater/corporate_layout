@@ -1,0 +1,89 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 160px 40px;
+
+  @media (max-width: 1199.9px) {
+    padding: 64px 20px;
+  }
+
+}
+
+.title {
+  font: var(--h3);
+  text-transform: uppercase;
+
+  @media (max-width: 1199.9px) {
+    font: var(--h3-mobile);
+    margin-bottom: 20px;
+  }
+}
+
+.tilesWrapper {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+"librate jti green"
+"librate jti apk"
+"auto create create"
+"garo create create";
+
+  @media (max-width: 1199.9px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+"librate green"
+"librate garo"
+"auto jti"
+"apk jti"
+"create create";
+  }
+}
+
+.librate {
+  grid-area: librate;
+}
+
+.jti {
+  grid-area: jti;
+}
+
+.green {
+  grid-area: green;
+
+  @media (max-width: 1199.9px) {
+    height: 69px;
+  }
+}
+
+.apk {
+  grid-area: apk;
+
+  @media (max-width: 1199.9px) {
+    height: 69px;
+  }
+}
+
+.autoProfi {
+  grid-area: auto;
+
+  @media (max-width: 1199.9px) {
+    height: 69px;
+  }
+}
+
+.garo {
+  grid-area: garo;
+
+  @media (max-width: 1199.9px) {
+    height: 69px;
+  }
+}
+
+.create {
+  grid-area: create;
+}
