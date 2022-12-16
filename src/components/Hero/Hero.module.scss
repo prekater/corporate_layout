@@ -1,0 +1,79 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 80px;
+  overflow: hidden;
+
+  @media (max-width: 1199.9px) {
+    margin-top: 40px;
+  }
+
+}
+
+.mainHeader {
+  font: var(--h1);
+  height: 190px;
+  margin: 0;
+  white-space: nowrap;
+  animation: marquee 10s infinite linear;
+  text-align: left;
+
+  @media (max-width: 1199.9px) {
+    font: var(--h1-mobile);
+    height: 80px;
+  }
+
+  &::after {
+    content: " Разработка ПО, SMM, Digital-маркетинг ";
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(-50%)
+  }
+}
+
+.mainBlockWrapper {
+  padding: 40px 85px 0 40px;
+  background: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+
+  @media (max-width: 1199.9px) {
+    padding: unset;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.mainText {
+  max-width: 500px;
+
+  @media (max-width: 1199.9px) {
+    font: var(--regular-text-mobile);
+    margin: 38px 20px 32px;
+  }
+}
+
+.heroImage {
+  margin-top: -100px;
+  width: 65%;
+
+  @media (max-width: 1199.9px) {
+    margin-top: -6%;
+    margin-left: -8%;
+    width: 100%;
+    min-width: 496px;
+  }
+}
