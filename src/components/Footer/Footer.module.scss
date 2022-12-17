@@ -1,0 +1,33 @@
+.root {
+  background-color: var(--black);
+  height: 152px;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 22% 0 40px;
+
+  @media (max-width: 1199.9px) {
+    flex-direction: column;
+    padding: 38px 20px 28px;
+    justify-content: center;
+    font: var(--regular-text-mobile);
+    height: auto;
+  }
+}
+
+.logo {
+  width: 158px;
+  height: 24px;
+
+  @media (max-width: 1199.9px) {
+    width: 132px;
+    height: 20px;
+  }
+}
+
+.email {
+  @media (max-width: 1199.9px) {
+    margin: 50px 0 16px;
+  }
+}
