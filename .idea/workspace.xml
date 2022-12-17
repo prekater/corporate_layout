@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7059c904-9982-496d-94e1-67d29a11292e" name="Changes" comment="" />
+    <list default="true" id="7059c904-9982-496d-94e1-67d29a11292e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Services/Services.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Description/Description.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Description/Description.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts/american_captain_cyrillic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts/american_captain_cyrillic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts/american_captain_cyrillic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts/american_captain_cyrillic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts/american_captain_cyrillic.woff2" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671186817546</updated>
-      <workItem from="1671186819012" duration="18247000" />
+      <workItem from="1671186819012" duration="29627000" />
     </task>
     <servers />
   </component>
