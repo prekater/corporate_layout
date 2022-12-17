@@ -1,0 +1,92 @@
+.root {
+  padding: 160px 40px 80px;
+  background-image: url('../../../public/images/chat.png');
+  background-position: 100% 0;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-color: var(--blue);
+
+  @media (max-width: 1199.9px) {
+    padding: 116px 20px 40px;
+    background-size: 35%;
+  }
+}
+
+.title {
+  font: var(--h3);
+  text-transform: uppercase;
+  margin-bottom: 80px;
+
+  @media (max-width: 1199.9px) {
+    font: var(--h3-mobile);
+    margin-bottom: 72px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fields {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+
+  @media (max-width: 1199.9px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 52px;
+  }
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: 1199.9px) {
+    font: var(--regular-text-mobile);
+  }
+
+}
+
+.input {
+  background-color: unset;
+  height: 28px;
+  border: none;
+  border-bottom: 3px solid var(--black);
+  width: 100%;
+
+  @media (max-width: 1199.9px) {
+    max-width: 500px;
+  }
+}
+
+.submitButton {
+  padding: 20px 28px;
+  width: 206px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: var(--black);
+  color: var(--white);
+  font: var(--small-text);
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1199.9px) {
+    width: 100%;
+    margin-top: 40px;
+    padding: 8px 10px;
+    height: 36px;
+    font: var(--small-text-mobile);
+  }
+}

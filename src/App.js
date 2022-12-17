@@ -3,6 +3,7 @@ import { Hero } from './components/Hero'
 import { Description } from './components/Description'
 import { Clients } from './components/Clients'
 import { Services } from './components/Services'
+import { ContactUs } from './components/ContactUs'
 
 import './App.css'
 
@@ -14,6 +15,7 @@ function App() {
       <Description />
       <Services />
       <Clients />
+      <ContactUs />
     </>
   )
 }
