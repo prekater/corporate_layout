@@ -2,7 +2,7 @@ import styles from './Description.module.scss'
 
 export const Description = () => {
   return (
-    <article className={styles.root}>
+    <article className={styles.root} id="about">
       <div className={styles.column}>
         <h6 className={styles.title}>Почему STMG?</h6>
         <p className={styles.text}>

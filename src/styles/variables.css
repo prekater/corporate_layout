@@ -38,4 +38,7 @@
 
   --menu-items-text: 600 32px/38px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
   --menu-items-text-mobile: 600 30px/36px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+
+  --burger-text: 600 24px/21px 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI Bold', 'Roboto Bold', sans-serif;
+
 }
