@@ -2,7 +2,7 @@ import styles from './Clients.module.scss'
 
 export const Clients = () => {
   return (
-    <article className={styles.root}>
+    <article className={styles.root} id="clients">
       <h3 className={styles.title}>
         НАШИ
         <br /> клиенты

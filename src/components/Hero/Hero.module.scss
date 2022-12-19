@@ -4,11 +4,11 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  margin-top: 80px;
-  overflow: hidden;
+  margin-top: 176px;
 
   @media (max-width: 1199.9px) {
-    margin-top: 40px;
+    margin-top: 96px;
+    overflow-x: hidden;
   }
 }
 
@@ -16,20 +16,29 @@
   font: var(--h1);
   height: 190px;
   margin: 0;
+  width: 100%;
   white-space: nowrap;
-  animation: marquee 10s infinite linear;
   text-align: left;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 
   @media (max-width: 1199.9px) {
     font: var(--h1-mobile);
     height: 80px;
   }
+}
+
+.marquee {
+  white-space: nowrap;
+  animation: marquee 3.5s infinite linear;
 
   &::after {
     content: ' Разработка ПО, SMM, Digital-маркетинг ';
   }
 }
+
 
 @keyframes marquee {
   0% {

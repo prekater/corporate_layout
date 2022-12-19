@@ -3,7 +3,9 @@ import styles from './Hero.module.scss'
 export const Hero = () => {
   return (
     <main className={styles.root}>
-      <h1 className={styles.mainHeader}>Разработка ПО, SMM, Digital-маркетинг</h1>
+      <h1 className={styles.mainHeader}>
+        <span className={styles.marquee}>Разработка ПО, SMM, Digital-маркетинг</span>
+      </h1>
       <div className={styles.mainBlockWrapper}>
         <span className={styles.mainText}>
           Мы помогаем компаниям выстраивать высокотехнологичные экосистемы и предоставлять клиентам качественный сервис.

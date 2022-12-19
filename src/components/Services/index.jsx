@@ -44,7 +44,7 @@ export const Services = () => {
   const handleCloseDetails = () => setIsShowDetails(false)
 
   return (
-    <article className={styles.root}>
+    <article className={styles.root} id="services">
       <div className={styles.leftColumn}>
         <span className={styles.title}>Услуги</span>
         <img
