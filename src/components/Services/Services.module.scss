@@ -121,7 +121,7 @@
   align-items: stretch;
   height: 100%;
   background-color: var(--blue);
-
+  z-index: 5;
 
   @media (max-width: 1199.9px) {
     position: fixed;
