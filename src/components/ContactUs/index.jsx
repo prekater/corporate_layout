@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+
+import { AgreementPopup } from './AgreementPopup/AgreementPopup'
+
 import styles from './ContactUs.module.scss'
 
 import axios from 'axios'
 const API_PATH = 'http://a0759874.xsph.ru/api/contact/index.php'
 
 export const ContactUs = () => {
-  const [formValues, setFormValues] = useState({ name: '', phone: '', email: '', mailSent: false, error: null })
+  const [isShowAgree, setIsShowAgree] = useState(false)
+  const [formValues, setFormValues] = useState({ name: '', phone: '', email: '', isAgree: '' })
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -22,6 +26,20 @@ export const ContactUs = () => {
 
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value })
+  }
+
+  const handleChangeCheckbox = (e) => {
+    setFormValues({ ...formValues, [e.target.name]: e.target.checked })
+  }
+
+  const handleShowAgreement = () => setIsShowAgree(!isShowAgree)
+
+  const overlayRef = useRef(null)
+
+  const handleCloseByOverlay = (e) => {
+    if (e.target === overlayRef.current) {
+      handleShowAgreement()
+    }
   }
 
   return (
@@ -64,11 +82,24 @@ export const ContactUs = () => {
             />
           </label>
         </div>
+        <label className={styles.checkboxLabel}>
+          <input type="checkbox" name="isAgree" checked={formValues.isAgree} onChange={handleChangeCheckbox} />Я принимаю
+          <button className={styles.agreement} onClick={handleShowAgreement}>
+            Условия cоглашения
+          </button>
+          <span className={styles.checkboxMark} />
+        </label>
         <button type="submit" className={styles.submitButton}>
           Отправить запрос
         </button>
         {formValues.mailSent && <div className={styles.afterSubmit}>Спасибо за обращение! Мы свяжемся с Вами</div>}
       </form>
+      {isShowAgree && (
+        <div className={styles.wrapperAgreement} onClick={handleCloseByOverlay} ref={overlayRef}>
+          <button type="button" className={styles.closeButton} onClick={handleShowAgreement} />
+          <AgreementPopup />
+        </div>
+      )}
     </article>
   )
 }

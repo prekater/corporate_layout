@@ -28,7 +28,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .fields {
@@ -54,7 +53,6 @@
   @media (max-width: 1199.9px) {
     font: var(--regular-text-mobile);
   }
-
 }
 
 .input {
@@ -106,5 +104,137 @@
 
   @media (max-width: 1199.9px) {
     font: var(--regular-text-mobile);
+  }
+}
+
+/*agreement styles*/
+
+.checkboxMark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border: 2px solid var(--black);
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  transition: all 0.2s;
+  border-radius: 3px;
+  opacity: 0.6;
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--black);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
+.checkboxLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: var(--black);
+  font: var(--small-text);
+
+  & input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .checkboxMark {
+      opacity: 1;
+    }
+
+    &:checked ~ .checkboxMark:after {
+      display: block;
+    }
+  }
+}
+
+.agreement {
+  display: inline-block;
+  margin-left: 1ch;
+  border: 1px solid transparent;
+  background: none;
+  color: var(--black);
+  cursor: pointer;
+  font: var(--small-text);
+  transition: all 0.6s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-bottom: 1px solid var(--black);
+    }
+  }
+}
+
+.wrapperAgreement {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.closeButton {
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  width: 43px;
+  height: 43px;
+  border: none;
+  background-color: transparent;
+  z-index: 6;
+  cursor: pointer;
+
+  @media (max-width: 992px) {
+    right: 10px;
+  }
+
+  &::before,
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 8px;
+    height: 30px;
+    width: 2px;
+    background-color: var(--gray);
+    transition: all 0.3s;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    content: ' ';
+    transform: rotate(-45deg);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      &::before,
+      &:after {
+        background-color: var(--white);
+      }
+    }
   }
 }
