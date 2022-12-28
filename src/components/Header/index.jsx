@@ -41,9 +41,9 @@ export const Header = () => {
           Клиенты
         </a>
       </nav>
-      <button type="button" className={styles.contactButton}>
+      <a className={styles.contactButton} href="#contact-us">
         Cвяжитесь с нами
-      </button>
+      </a>
       {isBurgerOpen && (
         <div className={styles.burgerWrapper}>
           <nav className={styles.burger}>

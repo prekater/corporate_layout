@@ -91,8 +91,20 @@
     font: var(--small-text-mobile);
   }
 
-  &:hover {
-    background-color: var(--white);
-    color: var(--black);
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--white);
+      color: var(--black);
+    }
+  }
+}
+
+.afterSubmit {
+  margin-top: 20px;
+  text-align: center;
+
+  @media (max-width: 1199.9px) {
+    font: var(--regular-text-mobile);
   }
 }
