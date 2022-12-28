@@ -74,9 +74,12 @@
     color: var(--black);
   }
 
-  &:hover {
-    border-bottom: 3px solid var(--blue);
+  @media (any-hover: hover) {
+    &:hover {
+      border-bottom: 3px solid var(--blue);
+    }
   }
+
 }
 
 .contactButton {
@@ -102,9 +105,12 @@
     font: var(--small-text-mobile);
   }
 
-  &:hover {
-    background-color: var(--blue);
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--blue);
+    }
   }
+
 }
 
 .burgerWrapper {

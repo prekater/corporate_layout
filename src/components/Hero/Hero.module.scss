@@ -32,7 +32,7 @@
 
 .marquee {
   white-space: nowrap;
-  animation: marquee 10s infinite linear;
+  animation: marquee 20s infinite linear;
 
   &::after {
     content: ' Разработка ПО, SMM, Digital-маркетинг ';
