@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from './Services.module.scss'
+import { useScrollLock, useDetectMobile } from '../../hooks/'
 
 const content = [
   {
@@ -28,10 +29,13 @@ const content = [
   },
 ]
 
-export const Services = () => {
+export const Services = ({ refProp }) => {
   const [activeServiceImg, setActiveServiceImg] = useState('sandglass')
   const [isShowDetails, setIsShowDetails] = useState(false)
   const [activeService, setActiveService] = useState(content[0])
+
+  const { lockScroll, unlockScroll } = useScrollLock()
+  const { isMobile } = useDetectMobile()
 
   const handleActiveImage = (param) => setActiveServiceImg(param)
 
@@ -39,12 +43,16 @@ export const Services = () => {
     setActiveService(content[index])
     setActiveServiceImg(content[index].img)
     setIsShowDetails(true)
+    isMobile && lockScroll()
   }
 
-  const handleCloseDetails = () => setIsShowDetails(false)
+  const handleCloseDetails = () => {
+    setIsShowDetails(false)
+    isMobile && unlockScroll()
+  }
 
   return (
-    <article className={styles.root} id="services">
+    <article className={styles.root} id="services" ref={refProp}>
       <div className={styles.leftColumn}>
         <span className={styles.title}>Услуги</span>
         <img

@@ -1,15 +1,19 @@
 import { useState, useRef } from 'react'
+import axios from 'axios'
+
+import { useScrollLock } from '../../hooks'
 
 import { AgreementPopup } from './AgreementPopup/AgreementPopup'
 
 import styles from './ContactUs.module.scss'
 
-import axios from 'axios'
 const API_PATH = 'http://a0759874.xsph.ru/api/contact/index.php'
 
-export const ContactUs = () => {
+export const ContactUs = ({ refProp }) => {
   const [isShowAgree, setIsShowAgree] = useState(false)
-  const [formValues, setFormValues] = useState({ name: '', phone: '', email: '', isAgree: '' })
+  const [formValues, setFormValues] = useState({ name: '', phone: '', email: '', isAgree: true })
+
+  const { lockScroll, unlockScroll } = useScrollLock()
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -32,7 +36,10 @@ export const ContactUs = () => {
     setFormValues({ ...formValues, [e.target.name]: e.target.checked })
   }
 
-  const handleShowAgreement = () => setIsShowAgree(!isShowAgree)
+  const handleShowAgreement = () => {
+    setIsShowAgree(!isShowAgree)
+    isShowAgree ? unlockScroll() : lockScroll()
+  }
 
   const overlayRef = useRef(null)
 
@@ -43,7 +50,7 @@ export const ContactUs = () => {
   }
 
   return (
-    <article className={styles.root} id="contact-us">
+    <article className={styles.root} id="contact-us" ref={refProp}>
       <h2 className={styles.title}>
         Закажите
         <br />
@@ -83,9 +90,9 @@ export const ContactUs = () => {
           </label>
         </div>
         <label className={styles.checkboxLabel}>
-          <input type="checkbox" name="isAgree" checked={formValues.isAgree} onChange={handleChangeCheckbox} />Я принимаю
-          <button className={styles.agreement} onClick={handleShowAgreement}>
-            Условия cоглашения
+          <input type="checkbox" name="isAgree" checked={formValues.isAgree} onChange={handleChangeCheckbox} required />Я принимаю
+          <button className={styles.agreement} onClick={handleShowAgreement} type="button">
+            Условия соглашения
           </button>
           <span className={styles.checkboxMark} />
         </label>
