@@ -1,8 +1,8 @@
 import styles from './Clients.module.scss'
 
-export const Clients = () => {
+export const Clients = ({ refProp }) => {
   return (
-    <article className={styles.root} id="clients">
+    <article className={styles.root} id="clients" ref={refProp}>
       <h3 className={styles.title}>
         НАШИ
         <br /> клиенты

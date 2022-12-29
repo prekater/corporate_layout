@@ -1,10 +1,25 @@
 import { useState } from 'react'
 import styles from './Header.module.scss'
+import { useScrollLock } from '../../hooks'
 
-export const Header = () => {
+export const Header = ({ onHandleScroll, aboutRef, servicesRef, contactUsRef, clientsRef }) => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false)
 
-  const handleBurger = (param) => () => setIsBurgerOpen(param)
+  const { lockScroll, unlockScroll } = useScrollLock()
+
+  const handleBurger = (param, element) => () => {
+    setIsBurgerOpen(param)
+    isBurgerOpen ? unlockScroll() : lockScroll()
+    onHandleScroll(element)
+  }
+
+  const handleNavItemClick = (element) => {
+    if (isBurgerOpen) {
+      setIsBurgerOpen(false)
+      unlockScroll()
+    }
+    onHandleScroll(element)
+  }
 
   return (
     <header className={styles.root}>
@@ -31,31 +46,31 @@ export const Header = () => {
         <img src="/images/logo.svg" alt="STMG.CO" className={styles.logo} />
       </div>
       <nav className={styles.navBar}>
-        <a className={styles.navItem} href="#about">
+        <div className={styles.navItem} onClick={() => handleNavItemClick(aboutRef)}>
           О нас
-        </a>
-        <a className={styles.navItem} href="#services">
+        </div>
+        <div className={styles.navItem} onClick={() => handleNavItemClick(servicesRef)}>
           Наши услуги
-        </a>
-        <a className={styles.navItem} href="#clients">
+        </div>
+        <div className={styles.navItem} onClick={() => handleNavItemClick(clientsRef)}>
           Клиенты
-        </a>
+        </div>
       </nav>
-      <a className={styles.contactButton} href="#contact-us">
+      <div className={styles.contactButton} onClick={() => handleNavItemClick(contactUsRef)}>
         Cвяжитесь с нами
-      </a>
+      </div>
       {isBurgerOpen && (
         <div className={styles.burgerWrapper}>
           <nav className={styles.burger}>
-            <a className={styles.burgerItem} href="#about" onClick={handleBurger(false)}>
+            <div className={styles.burgerItem} onClick={handleBurger(false, aboutRef)}>
               О нас
-            </a>
-            <a className={styles.burgerItem} href="#services" onClick={handleBurger(false)}>
+            </div>
+            <div className={styles.burgerItem} onClick={handleBurger(false, servicesRef)}>
               Наши услуги
-            </a>
-            <a className={styles.burgerItem} href="#clients" onClick={handleBurger(false)}>
+            </div>
+            <div className={styles.burgerItem} onClick={handleBurger(false, clientsRef)}>
               Клиенты
-            </a>
+            </div>
           </nav>
         </div>
       )}

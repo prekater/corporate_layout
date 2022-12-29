@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7059c904-9982-496d-94e1-67d29a11292e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/hooks/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useDetectMobile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useScrollLock.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs/ContactUs.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Clients/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Clients/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContactUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactUs/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Description/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Description/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services/Services.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Services.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +37,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\pepek\\WebstormProjects\\corporate-layout\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/pepek/WebstormProjects/corporate-layout/src/providers",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\pepek\\WebstormProjects\\corporate-layout\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2021.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pepek\WebstormProjects\corporate-layout\src\providers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -70,6 +87,7 @@
       <workItem from="1671632118509" duration="1891000" />
       <workItem from="1671787667590" duration="1366000" />
       <workItem from="1671795507337" duration="8989000" />
+      <workItem from="1672314305030" duration="10600000" />
     </task>
     <servers />
   </component>
