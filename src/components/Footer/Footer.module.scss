@@ -1,18 +1,31 @@
 .root {
   background-color: var(--black);
-  height: 152px;
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 22% 30px 40px;
+
+  @media (max-width: 1199.9px) {
+    align-items: center;
+    padding: 38px 20px 28px;
+    font: var(--regular-text-mobile);
+    height: auto;
+  }
+}
+
+.contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 22% 0 40px;
+  padding-bottom: 28px;
+  width: 100%;
 
   @media (max-width: 1199.9px) {
     flex-direction: column;
-    padding: 38px 20px 28px;
     justify-content: center;
-    font: var(--regular-text-mobile);
-    height: auto;
+    padding-bottom: 20px;
   }
 }
 
@@ -30,4 +43,8 @@
   @media (max-width: 1199.9px) {
     margin: 50px 0 16px;
   }
+}
+
+.copyright {
+  font-size: 13px;
 }

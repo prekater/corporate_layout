@@ -1,0 +1,55 @@
+.textWrapper {
+  margin: 65px auto;
+  padding: 40px 45px 16px;
+  text-align: left;
+  background-color: var(--white);
+  max-width: 960px;
+  font-size: 14px;
+  line-height: 1.55;
+  z-index: 10;
+}
+
+.textHeader {
+  font-size: 30px;
+  line-height: 1.17;
+  font-weight: 700;
+  color: var(--black-bold);
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.orderedList {
+  list-style: none;
+  counter-reset: li;
+}
+
+.listItem_bold {
+  font-weight: 700;
+
+  &:before {
+    counter-increment: li;
+    content: counters(li, '.') '. ';
+  }
+}
+
+.listItem {
+  font-weight: 400;
+  margin: 10px 0;
+
+  &:before {
+    counter-increment: li;
+    content: counters(li, '.') '. ';
+  }
+}
+
+.paragraph {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraph_end {
+  width: 100%;
+  text-align: end;
+  margin-top: 20px;
+}
