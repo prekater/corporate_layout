@@ -22,7 +22,7 @@ if ($_POST)
 	$phone = trim($phone);
 
 
-	$to = "pepekatya@gmail.com";
+	$to = "office@stmgco.com";
 
 	$from = $_POST['email'];
 	$from = htmlspecialchars($from);
