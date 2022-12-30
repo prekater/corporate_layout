@@ -67,7 +67,7 @@ export const ContactUs = ({ refProp }) => {
               value={formValues.name}
               className={styles.input}
               required
-              pattern="^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9-_\.]{1,20}$"
+              pattern="^[[A-Za-zА-Яа-яЁё][[A-Za-zА-Яа-яЁё0-9-_\.\s*]{1,20}$"
               title="Имя должно начинаться с буквы"
             />
           </label>

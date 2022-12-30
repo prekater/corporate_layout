@@ -11,25 +11,37 @@ if ($_POST)
 	// set response code - 200 OK
 
 	http_response_code(200);
-	$subject = $_POST['name'];
+	$name = $_POST['name'];
+	$name = htmlspecialchars($name);
+	$name = urldecode($name);
+	$name = trim($name);
+	
+	$phone = $_POST['phone'];
+	$phone = htmlspecialchars($phone);
+	$phone = urldecode($phone);
+	$phone = trim($phone);
+
+
 	$to = "pepekatya@gmail.com";
+
 	$from = $_POST['email'];
+	$from = htmlspecialchars($from);
+	$from = urldecode($from);
+	$from = trim($from);
+
 
 	// data
-
-	$msg = $_POST['phone'] . $_POST['name'];
+	$msg = $name . ' ' . $phone  ;
 
 	// Headers
-
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers.= "Content-type: text/html; charset=UTF-8\r\n";
 	$headers.= "From: <" . $from . ">";
-	mail($to, $subject, $msg, $headers);
+	mail($to, 'Свяжитесь со мной', $msg, $headers);
 
 	// echo json_encode( $_POST );
-
-	echojson_encode(array(
-		"sent" => true
+	echo json_encode(array(
+		"mailSent" => true
 	));
 	}
   else
@@ -37,7 +49,7 @@ if ($_POST)
 
 	// tell the user about error
 
-	echojson_encode(["sent" => false, "message" => "Something went wrong"]);
+	echo json_encode(["mailSent" => false, "message" => "Something went wrong"]);
 	}
 
 ?>
