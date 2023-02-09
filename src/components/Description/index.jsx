@@ -4,7 +4,11 @@ export const Description = ({ refProp }) => {
   return (
     <article className={styles.root} id="about" ref={refProp}>
       <div className={styles.column}>
-        <h6 className={styles.title}>Почему STMG?</h6>
+        <h6 className={styles.title}>
+          Почему
+          <br />
+          IT Technology?
+        </h6>
         <p className={styles.text}>
           Занимаемся разработкой программного обеспечения, созданием мобильных приложений, веб-дизайном и продвижением брендов в интернете.
         </p>
