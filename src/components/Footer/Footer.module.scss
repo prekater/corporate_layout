@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 60px 22% 30px 40px;
+  padding: 26px 60px 26px 40px;
 
   @media (max-width: 1199.9px) {
     align-items: center;
@@ -30,18 +30,18 @@
 }
 
 .logo {
-  width: 158px;
-  height: 24px;
+  width: 97px;
+  height: 100px;
 
   @media (max-width: 1199.9px) {
-    width: 132px;
-    height: 20px;
+    width: 58px;
+    height: 60px;
   }
 }
 
 .email {
   @media (max-width: 1199.9px) {
-    margin: 50px 0 16px;
+    margin: 28px 0 16px;
   }
 }
 
