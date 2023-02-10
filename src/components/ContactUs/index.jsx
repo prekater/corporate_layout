@@ -7,7 +7,7 @@ import { AgreementPopup } from './AgreementPopup/AgreementPopup'
 
 import styles from './ContactUs.module.scss'
 
-const API_PATH = 'http://a0759874.xsph.ru/api/contact/index.php'
+const API_PATH = 'http://it-technology-co.ru/api/contact/index.php'
 
 export const ContactUs = ({ refProp }) => {
   const [isShowAgree, setIsShowAgree] = useState(false)
