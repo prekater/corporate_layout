@@ -43,7 +43,7 @@ export const Header = ({ onHandleScroll, aboutRef, servicesRef, contactUsRef, cl
             onClick={handleBurger(true)}
           />
         )}
-        <img src="/images/logo.svg" alt="STMG.CO" className={styles.logo} />
+        <img src="/images/logo.svg" alt="it-technology" className={styles.logo} />
       </div>
       <nav className={styles.navBar}>
         <div className={styles.navItem} onClick={() => handleNavItemClick(aboutRef)}>

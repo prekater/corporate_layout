@@ -22,7 +22,7 @@ if ($_POST)
 	$phone = trim($phone);
 
 
-	$to = "office@stmgco.com";
+	$to = "it-technology@internet.ru";
 
 	$from = $_POST['email'];
 	$from = htmlspecialchars($from);
@@ -49,7 +49,7 @@ if ($_POST)
 
 	// tell the user about error
 
-	echo json_encode(["mailSent" => false, "message" => "Something went wrong"]);
+	echo json_encode(["mailSent" => false, "message" => "Что-то пошло не так :-("]);
 	}
 
 ?>
