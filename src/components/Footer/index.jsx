@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className={styles.root}>
       <div className={styles.contacts}>
-        <img src="/images/logo-white.svg" alt="STMGCO" className={styles.logo} />
+        <img src="/images/logo-white.svg" alt="IT Technology" className={styles.logo} />
         <span className={styles.email}>it-technology@internet.ru</span>
         <span>+7 915 278 77 13</span>
       </div>
