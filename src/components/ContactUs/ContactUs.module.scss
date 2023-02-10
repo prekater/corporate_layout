@@ -89,11 +89,10 @@
     font: var(--small-text-mobile);
   }
 
-
   @media (any-hover: hover) {
     &:hover {
-      background-color: var(--white);
-      color: var(--black);
+      background-color: var(--hover-gray);
+      border-color: var(--hover-gray);
     }
   }
 }
